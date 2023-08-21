@@ -7,7 +7,12 @@
      --ocean: #404BBF; /*color  menu hover focus*/
 
 }
-
+/* Обнулення */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
 
 /* main parameters for wrapper */
 .container {
@@ -15,9 +20,10 @@
     font-size: 16px;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.32px;
+    padding: 0 15px;
 
-    max-width: 1440px;
-    max-height: 3300px;
+    max-width: 1158px;
+    height: 100%;
     background-color: #FFF;
 
     color: var(--slate);
@@ -157,4 +163,43 @@ a.nav-menu:hover, a.nav-menu:focus {
 
 .footer-text {
     color: var(--cloud);
+}
+
+/* --LOCATION-- */
+.header {
+    display: flex;
+    flex: ;
+    
+}
+
+.header-nav {
+    display: flex;
+	align-items: center;
+    gap: 70px;
+    padding: 0 3px;
+    
+}
+
+.list {
+    margin: 24px 0;
+}
+.header-navlist {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 3px;
+    flex: 1 1 auto;
+
+}
+.flex_element {
+    flex-grow: 1;
+}
+
+.header-adrlist {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 3px;
+    margin: 24px 0;
 }
