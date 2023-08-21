@@ -1,0 +1,160 @@
+:root {
+     --slate: #434455; /*color body text*/
+     --navyblue: #2E2F42; /*color title mail*/
+     --iris: #4D5AE5; /*color logo*/
+     --white: #FFF; /*color section1*/
+     --cloud: #F4F4FD; /*color section3*/
+     --ocean: #404BBF; /*color  menu hover focus*/
+
+}
+
+
+/* main parameters for wrapper */
+.container {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.32px;
+
+    max-width: 1440px;
+    max-height: 3300px;
+    background-color: #FFF;
+
+    color: var(--slate);
+}
+
+
+/* --HEADER-- */
+a:link {
+    text-decoration: none;}
+
+.logo {
+    color: var(--iris);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logo-half2 {
+    color: var(--navyblue);
+}
+ul {
+    list-style-type: none;
+}
+
+a.nav-menu {
+    color: var(--navyblue);
+    font-weight: 500;
+}
+
+a.nav-menu:hover, a.nav-menu:focus {
+    color: var(--ocean); 
+}
+
+.address_data {
+    font-style: normal;
+}
+
+.nav-address {
+    color: var(--slate);
+}
+
+.nav-address:hover, .nav-address:focus {
+    color: var(--ocean);
+}
+
+
+/* --SECTION 1-- */
+.section-main {
+    background: var(--navyblue);
+}
+
+/* Header h1 */
+.title-main {
+    background: var(--navyblue);
+    color: var(--white);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07; /* 107.143% */
+    letter-spacing: 1.12px;
+}
+
+.button {
+    color: var(--white);
+    /* Button Text */
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    background-color: var(--iris);
+}
+
+.button:hover, .button:focus {
+    background-color: var(--ocean);
+}
+
+
+/* --SECTION 2-- */
+/* Header h2 */
+.title-subtitle {
+    color: var(--navyblue);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+/* Header h3 */
+.title {
+    color: var(--navyblue);
+    /* Header 3 */
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.4px;
+}
+
+/* для чого дублювати характеристики які наслідуються з основного контейнеру? */
+.main-text {
+    color: inherit;
+    font-size: 16px;
+}
+
+/* --SECTION 3-- */
+.section-our_team {
+    background: var(--cloud);
+}
+
+.image {background-color: #FFFFFF;}
+
+
+/* --FOOTER-- */
+.footer {
+    background-color: var(--navyblue);
+}
+
+.logo-footer {
+    color: var(--iris);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logo-halftoot{
+    color: var(--cloud);
+}
+
+.footer-text {
+    color: var(--cloud);
+}
