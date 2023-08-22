@@ -5,6 +5,7 @@
      --white: #FFF; /*color section1*/
      --cloud: #F4F4FD; /*color section3*/
      --ocean: #404BBF; /*color  menu hover focus*/
+     --cornflower: #E7E9FC;
 
 }
 /* Обнулення */
@@ -132,6 +133,7 @@ a.nav-menu:hover, a.nav-menu:focus {
     line-height: 1.11; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 /* Header h3 */
@@ -160,6 +162,7 @@ a.nav-menu:hover, a.nav-menu:focus {
 /* --FOOTER-- */
 .footer {
     background-color: var(--navyblue);
+    padding: 120px 0;
 }
 
 .logo-footer {
@@ -178,6 +181,8 @@ a.nav-menu:hover, a.nav-menu:focus {
 
 .footer-text {
     color: var(--cloud);
+    max-width: 264px;
+    margin-top: 18px;
 }
 
 /* --LOCATION-- */
@@ -236,7 +241,48 @@ a.nav-menu:hover, a.nav-menu:focus {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 32px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 32px 0;
+}
+
+.section-our_portfolio {
+    padding: 120px 0;
+}
+
+.section-3_list {
+    display: flex;
+    /* gap: 24px; */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-3_list_item {
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 360;
+    border: 1px solid var(--cornflower);
+}
+
+.section-3_list_item:not(last-child) {
+    margin-bottom: 48px;
+}
+
+.team_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    margin: 32px 0;
 }
