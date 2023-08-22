@@ -117,9 +117,10 @@ a.nav-menu:hover, a.nav-menu:focus {
 /* --SECTION 2-- */
 
 .section-h2 {
-    border: 1px solid red;
     padding: 120px 0;
 }
+
+.section-h2 h2 { display: none;}
 
 /* Header h2 */
 .title-subtitle {
@@ -132,8 +133,6 @@ a.nav-menu:hover, a.nav-menu:focus {
     letter-spacing: 0.72px;
     text-transform: capitalize;
 }
-
-h2.title-subtitle {text-display: hidden; }
 
 /* Header h3 */
 .title {
@@ -155,10 +154,8 @@ h2.title-subtitle {text-display: hidden; }
 /* --SECTION 3-- */
 .section-our_team {
     background: var(--cloud);
+    padding: 120px 0;
 }
-
-.image {background-color: #FFFFFF;}
-
 
 /* --FOOTER-- */
 .footer {
@@ -199,7 +196,6 @@ h2.title-subtitle {text-display: hidden; }
     gap: 70px;
     padding: 0 3px;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
 }
 
 .header-navlist {
@@ -208,7 +204,6 @@ h2.title-subtitle {text-display: hidden; }
     gap: 40px;
     padding: 0 3px;
     flex-wrap: wrap;
-    /* border: 1px solid rgb(0, 255, 76); */
 }
 
 .header-adrlist {
@@ -218,5 +213,30 @@ h2.title-subtitle {text-display: hidden; }
     align-items: center;
     padding: 0 3px;
     flex-wrap: wrap;
-    /* border: 1px solid rgb(47, 0, 255); */
+}
+
+.section-h2_list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.section-h2_list_item {
+    display: flex;
+    flex-direction: column;
+    max-width: 264px;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.image { 
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
 }
