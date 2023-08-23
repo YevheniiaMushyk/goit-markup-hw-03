@@ -5,7 +5,7 @@
      --white: #FFF; /*color section1*/
      --cloud: #F4F4FD; /*color section3*/
      --ocean: #404BBF; /*color  menu hover focus*/
-     --cornflower: #E7E9FC;
+    --cornflower: #E7E9FC; /*border color */
 
 }
 /* Обнулення */
@@ -16,18 +16,19 @@
   }
 
 /* main parameters for wrapper */
-.container {
+body {
     font-family: Roboto, sans-serif;
-    font-size: 16px;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.32px;
-    padding: 0 15px;
-
-    max-width: 1158px;
-    height: 100%;
     background-color: #FFF;
 
-    color: var(--slate);
+}
+
+.container {  
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1158px;
+    height: 100%;
 }
 
 
@@ -43,6 +44,7 @@ a:link {
     line-height: 1.17; /* 116.667% */
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    min-width: 190px;
 }
 
 .logo-half2 {
@@ -85,7 +87,6 @@ a.nav-menu:hover, a.nav-menu:focus {
     background: var(--navyblue);
     color: var(--white);
     text-align: center;
-    font-family: Roboto;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07; /* 107.143% */
@@ -127,7 +128,6 @@ a.nav-menu:hover, a.nav-menu:focus {
 .title-subtitle {
     color: var(--navyblue);
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11; /* 111.111% */
@@ -140,16 +140,13 @@ a.nav-menu:hover, a.nav-menu:focus {
 .title {
     color: var(--navyblue);
     /* Header 3 */
-    font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2; /* 120% */
     letter-spacing: 0.4px;
 }
 
-/* для чого дублювати характеристики які наслідуються з основного контейнеру? */
 .main-text {
-    color: inherit;
     font-size: 16px;
 }
 
@@ -162,17 +159,7 @@ a.nav-menu:hover, a.nav-menu:focus {
 /* --FOOTER-- */
 .footer {
     background-color: var(--navyblue);
-    padding: 120px 0;
-}
-
-.logo-footer {
-    color: var(--iris);
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17; /* 116.667% */
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
+    padding: 100px 0;
 }
 
 .logo-halftoot{
@@ -187,18 +174,19 @@ a.nav-menu:hover, a.nav-menu:focus {
 
 /* --LOCATION-- */
 .header {
-    display: flex;
-    min-height: 76px;
-    /* border: 1px solid #2E2F42; */
+    display: inline-flex;
+    width: 100%;
+    padding: 25.5px 0;
     justify-content: space-between;
     align-items: center;  
     flex-wrap: wrap;
+    border-bottom: 1px solid var(--cornflower);
 }
 
 .header-nav {
-    display: flex;
+    display: inline-flex;
 	align-items: center;
-    gap: 70px;
+    justify-content: space-between;
     padding: 0 3px;
     flex-wrap: wrap;
 }
@@ -206,14 +194,14 @@ a.nav-menu:hover, a.nav-menu:focus {
 .header-navlist {
     display: flex;
     align-items: center;
-    gap: 40px;
+    column-gap: 40px;
     padding: 0 3px;
     flex-wrap: wrap;
 }
 
 .header-adrlist {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
     justify-content: flex-end;
     align-items: center;
     padding: 0 3px;
@@ -222,14 +210,15 @@ a.nav-menu:hover, a.nav-menu:focus {
 
 .section-h2_list {
     display: flex;
-    gap: 24px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .section-h2_list_item {
     display: flex;
     flex-direction: column;
-    max-width: 264px;
+    width: calc((100% - 72px) / 4);
+    min-width: 264px;
     align-items: flex-start;
     gap: 8px;
 }
@@ -258,7 +247,6 @@ a.nav-menu:hover, a.nav-menu:focus {
 
 .section-3_list {
     display: flex;
-    /* gap: 24px; */
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -270,7 +258,8 @@ a.nav-menu:hover, a.nav-menu:focus {
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    max-width: 360;
+    width: calc((100% - 48px) / 3);
+    min-width: 360px;
     border: 1px solid var(--cornflower);
 }
 
