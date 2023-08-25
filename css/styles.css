@@ -54,9 +54,9 @@ ul {
     list-style-type: none;
 }
 
-.header-navlist li a {
+/* .header-navlist li a {
     padding: 24px 0;
-}
+} */
 
 a.nav-menu {
     color: var(--navyblue);
@@ -281,9 +281,9 @@ a.nav-menu:focus {
     min-width: 360px;
 }
 
-.section-op_list_item:not(last-child) {
+/* .section-op_list_item:not(last-child) {
     margin-bottom: 48px;
-}
+} */
 
 .team_card {
     width: 100%;
