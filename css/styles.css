@@ -44,7 +44,7 @@ a:link {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     margin-right: 76px;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 
 .logo-half2 {
@@ -54,9 +54,9 @@ ul {
     list-style-type: none;
 }
 
-/* .header-navlist li a {
+.header-nav a {
     padding: 24px 0;
-} */
+}
 
 a.nav-menu {
     color: var(--navyblue);
@@ -310,7 +310,7 @@ a.nav-menu:focus {
 .footer-text {
     color: var(--cloud);
     max-width: 264px;
-    margin-top: 18px;
+    /* margin-top: 18px; */
 }
 
 .footer .container a {
